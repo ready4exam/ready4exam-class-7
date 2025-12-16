@@ -225,7 +225,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
       const isWrong = submitted && isSel && !isCorrect;
 
       // MODIFIED: Changed p-2 to p-1 for compactness
-      let cls = "option-label flex items-start px-3 py-0 border-2 rounded-lg cursor-pointer transition";
+      let cls = let cls = "option-label flex items-start p-3 border-2 rounded-lg cursor-pointer transition";
       if (isCorrect) cls += " border-green-600 bg-green-50";
       else if (isWrong) cls += " border-red-600 bg-red-50";
       else if (isSel) cls += " border-blue-500 bg-blue-50";
@@ -241,7 +241,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
     }).join("");
 
     els.list.innerHTML = `
-      <div class="space-y-4"> // Slightly reduced from space-y-5
+      <div class="space-y-5"> // Slightly reduced from space-y-5
         <p class="text-lg font-bold text-gray-900">
           Q${idxOneBased}:
           <span class="font-bold"> Assertion (A):</span> ${assertion}
@@ -249,10 +249,10 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
         <p class="text-md text-gray-900">
           <span class="font-bold">Reason (R):</span> ${reason}
         </p>
-        <div class="mt-2 text-gray-900 font-semibold"> // Reduced mt-3 to mt-2
+        <div class="mt-3 text-gray-900 font-semibold"> // Reduced mt-3 to mt-2
           Mark the correct choice as:
         </div>
-        <div class="space-y-0">
+        <div class="space-y-3">
           ${optionsHtml}
         </div>
       </div>`;
@@ -326,14 +326,14 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
         : "";
 
     els.list.innerHTML = `
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start"> // Reduced gap-6 to gap-4
-        <div class="p-3 bg-gray-50 rounded-lg border border-gray-200"> // REMOVED max-h-64 overflow-y-auto and reduced p-4 to p-3
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start"> // Reduced gap-6 to gap-4
+         <div class="p-4 bg-gray-50 rounded-lg border border-gray-200 max-h-64 overflow-y-auto"> // REMOVED max-h-64 overflow-y-auto and reduced p-4 to p-3
           <h3 class="font-semibold mb-1 text-gray-900">Scenario</h3> // Reduced mb-2 to mb-1
           <p class="text-gray-800 text-sm md:text-base whitespace-pre-line">${scenarioText}</p>
         </div>
-        <div class="space-y-3"> // Reduced space-y-4 to space-y-3
+        <div class="space-y-4"> // Reduced space-y-4 to space-y-3
           <p class="text-lg font-bold text-gray-900">Q${idxOneBased}: ${questionText || "Based on the scenario, answer this question."}</p>
-          <div class="space-y-0">${optionsHtml}</div> // Reduced space-y-2 to space-y-1
+          <div class="space-y-3let cls = "option-label flex items-start px-3">${optionsHtml}</div> // Reduced space-y-2 to space-y-1
           ${submittedExplanationHtml}
         </div>
       </div>`;
@@ -348,14 +348,14 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
   let reasonRaw = q.explanation || q.scenario_reason || "";
   const reason = normalizeReasonText(cleanKatexMarkers(reasonRaw));
   const label = type === "case" ? "Context" : "Reasoning (R)";
-
-  const reasonHtml =
-    (type === "ar" || type === "case") && reason && !submitted
-      ? `<p class="text-gray-700 mt-1 mb-2">${label}: ${reason}</p>` : ""; // Reduced mt-2 mb-3
+  
+ const reasonHtml =
+       (type === "ar" || type === "case") && reason && !submitted
+    ? `<p class="text-gray-700 mt-2 mb-3">${label}: ${reason}</p>` : "";
 
   const submittedExplanationHtml =
     submitted && (type === "ar" || type === "case") && reason
-      ? `<div class="mt-2 p-2 bg-gray-50 rounded text-gray-700 border border-gray-100"><b>${label}:</b> ${reason}</div>` // Reduced mt-3 p-3
+      ? `<div class="mt-3 p-3 bg-gray-50 rounded text-gray-700 border border-gray-100"><b>${label}:</b> ${reason}</div>` // Reduced mt-3 p-3
       : "";
 
   const optionsHtml = ["A", "B", "C", "D"].map(opt => {
@@ -365,7 +365,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
     const isWrong = submitted && isSel && !isCorrect;
 
     // MODIFIED: Changed p-3 to p-2 for compactness
-   let cls = "option-label flex items-start px-2 py-0 border-2 rounded-lg cursor-pointer transition"; // <-- Use py-0 and potentially smaller horizontal px-2
+   let cls = "option-label flex items-start p-3 py-0 border-2 rounded-lg cursor-pointer transition"; // <-- Use py-0 and potentially smaller horizontal px-2
     if (isCorrect) cls += " border-green-600 bg-green-50";
     else if (isWrong) cls += " border-red-600 bg-red-50";
     else if (isSel) cls += " border-blue-500 bg-blue-50";
@@ -381,10 +381,10 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
   }).join("");
 
   els.list.innerHTML = `
-    <div class="space-y-2"> 
+    <div class="space-y-6"> 
       <p class="text-lg font-bold text-gray-800">Q${idxOneBased}: ${qText}</p>
       ${reasonHtml}
-      <div class="space-y-0">${optionsHtml}</div>
+      <div class="space-y-3">${optionsHtml}</div>
       ${submittedExplanationHtml}
     </div>`;
 
