@@ -231,7 +231,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
       else if (isSel) cls += " border-blue-500 bg-blue-50";
 
       return `
-        <label class="block mb-0">
+        <label class="block my-0 py-0">
           <input type="radio" name="q-${q.id}" value="${opt}" class="hidden" ${isSel ? "checked" : ""} ${submitted ? "disabled" : ""}>
           <div class="${cls}">
             <span class="font-bold mr-3">${opt})</span>
