@@ -252,7 +252,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
         <div class="mt-2 text-gray-900 font-semibold"> // Reduced mt-3 to mt-2
           Mark the correct choice as:
         </div>
-        <div class="space-y-2"> // Reduced space-y-3 to space-y-2
+        <div class="space-y-1">
           ${optionsHtml}
         </div>
       </div>`;
@@ -381,7 +381,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
   }).join("");
 
   els.list.innerHTML = `
-    <div class="space-y-2"> // Reduced space-y-4 to space-y-2 (major compaction)
+    <div class="space-y-2"> 
       <p class="text-lg font-bold text-gray-800">Q${idxOneBased}: ${qText}</p>
       ${reasonHtml}
       <div class="space-y-2">${optionsHtml}</div> // Reduced space-y-3 to space-y-2
