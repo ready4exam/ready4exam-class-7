@@ -303,7 +303,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
       const isCorrect = submitted && q.correct_answer?.toUpperCase() === opt;
       const isWrong = submitted && isSel && !isCorrect;
 
-      let cls = "option-label flex items-start px-3 py-0 border-2 rounded-lg cursor-pointer transition";
+      let cls = "option-label flex items-start px-2 py-0 border-2 rounded-lg cursor-pointer transition"; // <-- Use py-0 and potentially smaller horizontal px-2
       if (isCorrect) cls += " border-green-600 bg-green-50";
       else if (isWrong) cls += " border-red-600 bg-red-50";
       else if (isSel) cls += " border-blue-500 bg-blue-50";
@@ -365,7 +365,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
     const isWrong = submitted && isSel && !isCorrect;
 
     // MODIFIED: Changed p-3 to p-2 for compactness
-    let cls = "option-label flex items-start px-3 py-0 border-2 rounded-lg cursor-pointer transition";
+   let cls = "option-label flex items-start px-2 py-0 border-2 rounded-lg cursor-pointer transition"; // <-- Use py-0 and potentially smaller horizontal px-2
     if (isCorrect) cls += " border-green-600 bg-green-50";
     else if (isWrong) cls += " border-red-600 bg-red-50";
     else if (isSel) cls += " border-blue-500 bg-blue-50";
