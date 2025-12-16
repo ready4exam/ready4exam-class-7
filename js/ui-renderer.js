@@ -384,7 +384,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
     <div class="space-y-2"> 
       <p class="text-lg font-bold text-gray-800">Q${idxOneBased}: ${qText}</p>
       ${reasonHtml}
-      <div class="space-y-2">${optionsHtml}</div> // Reduced space-y-3 to space-y-2
+      <div class="space-y-1">${optionsHtml}</div>
       ${submittedExplanationHtml}
     </div>`;
 
