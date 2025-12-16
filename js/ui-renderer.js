@@ -252,7 +252,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
         <div class="mt-2 text-gray-900 font-semibold"> // Reduced mt-3 to mt-2
           Mark the correct choice as:
         </div>
-        <div class="space-y-1">
+        <div class="space-y-0">
           ${optionsHtml}
         </div>
       </div>`;
@@ -333,7 +333,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
         </div>
         <div class="space-y-3"> // Reduced space-y-4 to space-y-3
           <p class="text-lg font-bold text-gray-900">Q${idxOneBased}: ${questionText || "Based on the scenario, answer this question."}</p>
-          <div class="space-y-1">${optionsHtml}</div> // Reduced space-y-2 to space-y-1
+          <div class="space-y-0">${optionsHtml}</div> // Reduced space-y-2 to space-y-1
           ${submittedExplanationHtml}
         </div>
       </div>`;
@@ -384,7 +384,7 @@ export function renderQuestion(q, idxOneBased, selected, submitted) {
     <div class="space-y-2"> 
       <p class="text-lg font-bold text-gray-800">Q${idxOneBased}: ${qText}</p>
       ${reasonHtml}
-      <div class="space-y-1">${optionsHtml}</div>
+      <div class="space-y-0">${optionsHtml}</div>
       ${submittedExplanationHtml}
     </div>`;
 
