@@ -340,7 +340,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Symmetry",
-        "table_id": "",
+        "table_id": "mathematics_symmetry_symmetry_7_quiz",
         "section": "Mathematics"
       },
       {
