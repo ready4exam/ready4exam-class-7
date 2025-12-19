@@ -291,7 +291,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Simple Equations",
-        "table_id": "",
+        "table_id": "mathematics_simple_equations_7_quiz",
         "section": "Mathematics"
       },
       {
