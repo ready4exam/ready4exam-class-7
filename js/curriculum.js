@@ -87,7 +87,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Forests: Our Lifeline",
-        "table_id": "",
+        "table_id": "science_forests_lifeline_7_quiz",
         "section": "Science"
       },
       {
