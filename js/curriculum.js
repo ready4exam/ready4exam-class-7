@@ -153,7 +153,7 @@ export const curriculum = {
     "Civics": [
       {
         "chapter_title": "On Equality",
-        "table_id": "",
+        "table_id": "social_equality_equality_7_quiz",
         "section": "Social Science"
       },
       {
