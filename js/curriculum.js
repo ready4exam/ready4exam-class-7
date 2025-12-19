@@ -315,7 +315,7 @@ export const curriculum = {
     "Geometry and Mensuration": [
       {
         "chapter_title": "Lines and Angles",
-        "table_id": "",
+        "table_id": "mathematics_lines_angles_7_quiz",
         "section": "Mathematics"
       },
       {
