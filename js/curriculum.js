@@ -325,7 +325,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Congruence of Triangles",
-        "table_id": "",
+        "table_id": "mathematics_congruence_triangles_7_quiz",
         "section": "Mathematics"
       },
       {
