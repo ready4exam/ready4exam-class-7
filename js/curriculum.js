@@ -335,7 +335,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Perimeter and Area",
-        "table_id": "",
+        "table_id": "mathematics_perimeter_area_7_quiz",
         "section": "Mathematics"
       },
       {
