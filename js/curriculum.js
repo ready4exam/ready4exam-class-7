@@ -158,7 +158,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Role of the Government in Health",
-        "table_id": "",
+        "table_id": "social_role_health_7_quiz",
         "section": "Social Science"
       },
       {
