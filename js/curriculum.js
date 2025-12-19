@@ -330,7 +330,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Practical Geometry",
-        "table_id": "",
+        "table_id": "mathematics_practical_geometry_7_quiz",
         "section": "Mathematics"
       },
       {
