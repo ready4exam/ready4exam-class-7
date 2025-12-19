@@ -320,7 +320,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "The Triangle and its Properties",
-        "table_id": "",
+        "table_id": "mathematics_triangle_properties_7_quiz",
         "section": "Mathematics"
       },
       {
