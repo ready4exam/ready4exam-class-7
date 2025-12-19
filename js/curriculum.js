@@ -286,7 +286,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Rational Numbers",
-        "table_id": "",
+        "table_id": "mathematics_rational_numbers_7_quiz",
         "section": "Mathematics"
       },
       {
