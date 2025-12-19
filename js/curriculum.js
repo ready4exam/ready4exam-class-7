@@ -57,7 +57,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Winds, Storms and Cyclones",
-        "table_id": "",
+        "table_id": "science_winds_cyclones_7_quiz",
         "section": "Science"
       },
       {
