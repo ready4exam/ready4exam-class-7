@@ -276,7 +276,7 @@ export const curriculum = {
     "Number System and Arithmetic": [
       {
         "chapter_title": "Integers",
-        "table_id": "",
+        "table_id": "mathematics_integers_integers_7_quiz",
         "section": "Mathematics"
       },
       {
