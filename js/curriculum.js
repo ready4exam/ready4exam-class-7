@@ -67,7 +67,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Respiration in Organisms",
-        "table_id": "",
+        "table_id": "science_respiration_organisms_7_quiz",
         "section": "Science"
       },
       {
