@@ -178,7 +178,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Understanding Media",
-        "table_id": "",
+        "table_id": "social_understanding_media_7_quiz",
         "section": "Social Science"
       },
       {
