@@ -13,7 +13,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Electric Current and its Effects",
-        "table_id": "",
+        "table_id": "science_electric_effects_7_quiz",
         "section": "Science"
       },
       {
