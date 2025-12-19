@@ -308,7 +308,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Algebraic Expressions",
-        "table_id": "",
+        "table_id": "mathematics_algebraic_expressions_7_quiz",
         "section": "Mathematics"
       }
     ],
