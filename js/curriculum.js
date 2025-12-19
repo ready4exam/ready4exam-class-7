@@ -303,7 +303,7 @@ export const curriculum = {
     "Algebra": [
       {
         "chapter_title": "Exponents and Powers",
-        "table_id": "",
+        "table_id": "mathematics_exponents_powers_7_quiz",
         "section": "Mathematics"
       },
       {
