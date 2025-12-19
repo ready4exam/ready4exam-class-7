@@ -62,7 +62,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Soil",
-        "table_id": "",
+        "table_id": "science_soil_soil_7_quiz",
         "section": "Science"
       },
       {
