@@ -92,7 +92,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Waste Water Story",
-        "table_id": "",
+        "table_id": "science_waste_story_7_quiz",
         "section": "Science"
       }
     ]
