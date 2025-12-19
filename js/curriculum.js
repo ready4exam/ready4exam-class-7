@@ -47,7 +47,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Nutrition in Animals",
-        "table_id": "",
+        "table_id": "science_nutrition_animals_7_quiz",
         "section": "Science"
       },
       {
