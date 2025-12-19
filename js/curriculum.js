@@ -77,7 +77,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Reproduction in Plants",
-        "table_id": "",
+        "table_id": "science_reproduction_plants_7_quiz",
         "section": "Science"
       },
       {
