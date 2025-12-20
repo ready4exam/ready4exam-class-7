@@ -146,7 +146,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Eighteenth-Century Political Formations",
-        "table_id": "",
+        "table_id": "social_eighteenth_formations_7_quiz",
         "section": "Social Science"
       }
     ],
