@@ -141,7 +141,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "The Making of Regional Cultures",
-        "table_id": "",
+        "table_id": "social_making_cultures_7_quiz",
         "section": "Social Science"
       },
       {
