@@ -126,7 +126,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Towns, Traders and Craftspersons",
-        "table_id": "",
+        "table_id": "social_towns_craftspersons_7_quiz",
         "section": "Social Science"
       },
       {
