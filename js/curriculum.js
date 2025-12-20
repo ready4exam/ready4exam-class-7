@@ -136,7 +136,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Devotional Paths to the Divine",
-        "table_id": "",
+        "table_id": "social_devotional_divine_7_quiz",
         "section": "Social Science"
       },
       {
