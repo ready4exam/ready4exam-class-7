@@ -3,7 +3,7 @@ import { initializeServices } from "./config.js";
 import { fetchQuestions, saveResult } from "./api.js";
 import * as UI from "./ui-renderer.js";
 import { initializeAuthListener, requireAuth } from "./auth-paywall.js";
-import { checkClassAccess } from "./firebase-expiry.js";
+import { checkClassAccess, showExpiredPopup } from "./firebase-expiry.js";
 
 let quizState = {
     classId: "",
@@ -20,7 +20,7 @@ let quizState = {
 let questionsPromise = null;
 
 /* -----------------------------------
-   PARSE URL PARAMETERS (Fully Dynamic)
+    PARSE URL PARAMETERS (Fully Dynamic)
 ----------------------------------- */
 function parseUrlParameters() {
     const params = new URLSearchParams(location.search);
@@ -55,7 +55,7 @@ function parseUrlParameters() {
 }
 
 /* -----------------------------------
-   LOAD QUIZ
+    LOAD QUIZ
 ----------------------------------- */
 async function loadQuiz() {
     try {
@@ -76,7 +76,7 @@ async function loadQuiz() {
 }
 
 /* -----------------------------------
-   RENDER QUESTION
+    RENDER QUESTION
 ----------------------------------- */
 function renderQuestion() {
     const q = quizState.questions[quizState.currentQuestionIndex];
@@ -94,7 +94,7 @@ function renderQuestion() {
 }
 
 /* -----------------------------------
-   ANSWER HANDLERS
+    ANSWER HANDLERS
 ----------------------------------- */
 function handleAnswerSelection(id, opt) {
     if (!quizState.isSubmitted) {
@@ -109,7 +109,7 @@ function handleNavigation(delta) {
 }
 
 /* -----------------------------------
-   SUBMIT QUIZ
+    SUBMIT QUIZ
 ----------------------------------- */
 async function handleSubmit() {
     quizState.isSubmitted = true;
@@ -147,7 +147,7 @@ async function handleSubmit() {
 }
 
 /* -----------------------------------
-   DOM EVENTS
+    DOM EVENTS
 ----------------------------------- */
 function attachDomEvents() {
     document.addEventListener("click", e => {
@@ -168,7 +168,7 @@ function attachDomEvents() {
 }
 
 /* -----------------------------------
-   GOOGLE LOGIN WIRE
+    GOOGLE LOGIN WIRE
 ----------------------------------- */
 function wireGoogleLogin() {
     const btn = document.getElementById("google-signin-btn");
@@ -181,7 +181,7 @@ function wireGoogleLogin() {
 }
 
 /* -----------------------------------
-   INIT
+    INIT
 ----------------------------------- */
 async function init() {
     // 1. Initial UI Setup
@@ -194,22 +194,30 @@ async function init() {
         // 2. Parallel initialization: Start services first
         await initializeServices();
         
-        // 3. Immediately trigger question fetch (Services are now ready)
-        questionsPromise = fetchQuestions(quizState.topicSlug, quizState.difficulty);
-
         wireGoogleLogin();
 
-        // 4. Handle Auth and Access while data fetches in background
+        // 3. Handle Auth and Access while data fetches in background
+    // Handle Auth and Access while data fetches in background
         await initializeAuthListener(async user => {
             if (user) {
+                // 1. Update the header with the student's name immediately
+                UI.updateAuthUI(user);
+
+                // 2. BLOCKING CHECK: Must 'await' the result before doing anything else
                 const access = await checkClassAccess(quizState.classId, quizState.subject);
+                
                 if (access.allowed) {
-                    loadQuiz(); 
+                    // 3. ALLOWED: Trigger the question fetch and load the UI
+                    questionsPromise = fetchQuestions(quizState.topicSlug, quizState.difficulty);
+                    await loadQuiz(); 
                 } else {
-                    alert(access.reason || "Access Restricted.");
-                    location.href = "index.html";
+                    // 4. BLOCKED: Hard stop. Hide status, force hide quiz view, and show popup.
+                    UI.hideStatus();
+                    UI.showView("paywall-screen"); // Ensure quiz-content is hidden
+                    showExpiredPopup(access.reason);
                 }
             } else {
+                // User is signed out: Show the standard login paywall
                 UI.showView("paywall-screen");
             }
         });
