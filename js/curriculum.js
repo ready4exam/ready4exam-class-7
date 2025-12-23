@@ -193,7 +193,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "A Shirt in the Market",
-        "table_id": "",
+        "table_id": "social_shirt_market_7_quiz",
         "section": "Social Science"
       },
       {
