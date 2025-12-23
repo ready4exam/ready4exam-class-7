@@ -188,7 +188,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Markets Around Us",
-        "table_id": "",
+        "table_id": "social_markets_us_7_quiz",
         "section": "Social Science"
       },
       {
