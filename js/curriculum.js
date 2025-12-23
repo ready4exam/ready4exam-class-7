@@ -245,7 +245,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Life in the Temperate Grasslands",
-        "table_id": "",
+        "table_id": "social_life_grasslands_7_quiz",
         "section": "Social Science"
       },
       {
