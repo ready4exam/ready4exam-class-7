@@ -235,7 +235,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Human Environment – Settlement, Transport and Communication",
-        "table_id": "",
+        "table_id": "social_human_communication_7_quiz",
         "section": "Social Science"
       },
       {
