@@ -262,7 +262,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "People as Resource",
-        "table_id": "",
+        "table_id": "social_people_resource_7_quiz",
         "section": "Social Science"
       },
       {
