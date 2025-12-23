@@ -240,7 +240,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Human-Environment Interactions: The Tropical and the Subtropical Region",
-        "table_id": "",
+        "table_id": "social_human_region_7_quiz",
         "section": "Social Science"
       },
       {
