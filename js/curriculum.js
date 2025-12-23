@@ -250,7 +250,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Life in the Deserts",
-        "table_id": "",
+        "table_id": "social_life_deserts_7_quiz",
         "section": "Social Science"
       }
     ],
