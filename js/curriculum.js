@@ -267,7 +267,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Food Security in India",
-        "table_id": "",
+        "table_id": "social_food_india_7_quiz",
         "section": "Social Science"
       }
     ]
