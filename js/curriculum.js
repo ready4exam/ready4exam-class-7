@@ -198,7 +198,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Struggles for Equality",
-        "table_id": "",
+        "table_id": "social_struggles_equality_7_quiz",
         "section": "Social Science"
       }
     ],
