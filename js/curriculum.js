@@ -210,7 +210,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Inside Our Earth",
-        "table_id": "",
+        "table_id": "social_inside_earth_7_quiz",
         "section": "Social Science"
       },
       {
