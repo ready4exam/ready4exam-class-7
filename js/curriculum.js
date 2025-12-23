@@ -215,7 +215,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Our Changing Earth",
-        "table_id": "",
+        "table_id": "social_our_earth_7_quiz",
         "section": "Social Science"
       },
       {
