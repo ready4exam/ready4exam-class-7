@@ -52,7 +52,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Weather, Climate and Adaptations of Animals to Climate",
-        "table_id": "",
+        "table_id": "science_weather_climate_7_quiz",
         "section": "Science"
       },
       {
