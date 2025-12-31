@@ -35,7 +35,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Fibre to Fabric",
-        "table_id": "",
+        "table_id": "science_fibre_fabric_7_quiz",
         "section": "Science"
       }
     ],
