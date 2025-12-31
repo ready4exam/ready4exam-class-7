@@ -18,7 +18,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Light",
-        "table_id": "",
+        "table_id": "science_light_light_7_quiz",
         "section": "Science"
       }
     ],
