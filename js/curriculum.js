@@ -8,7 +8,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Motion and Time",
-        "table_id": "",
+        "table_id": "science_motion_time_7_quiz",
         "section": "Science"
       },
       {
