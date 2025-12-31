@@ -25,7 +25,7 @@ export const curriculum = {
     "Chemistry": [
       {
         "chapter_title": "Acids, Bases and Salts",
-        "table_id": "",
+        "table_id": "science_acids_salts_7_quiz",
         "section": "Science"
       },
       {
