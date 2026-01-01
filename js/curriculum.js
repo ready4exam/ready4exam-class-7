@@ -106,7 +106,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "New Kings and Kingdoms",
-        "table_id": "",
+        "table_id": "social_new_kingdoms_7_quiz",
         "section": "Social Science"
       },
       {
