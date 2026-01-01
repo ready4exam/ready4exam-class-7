@@ -163,7 +163,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Growing up as Boys and Girls",
-        "table_id": "",
+        "table_id": "social_growing_girls_7_quiz",
         "section": "Social Science"
       },
       {
