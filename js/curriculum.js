@@ -158,7 +158,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "How the State Government Works",
-        "table_id": "",
+        "table_id": "social_how_works_7_quiz",
         "section": "Social Science"
       },
       {
