@@ -72,7 +72,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Transportation in Animals and Plants",
-        "table_id": "",
+        "table_id": "science_transportation_plants_7_quiz",
         "section": "Science"
       },
       {
