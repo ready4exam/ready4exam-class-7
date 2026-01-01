@@ -89,7 +89,7 @@ export const curriculum = {
         "chapter_title": "Forests: Our Lifeline",
         "table_id": "science_forests_lifeline_7_quiz",
         "section": "Science"
-      },
+      }
     ]
   },
   "Social Science": {
@@ -148,7 +148,7 @@ export const curriculum = {
     "Civics": [
       {
         "chapter_title": "On Equality",
-        "table_id": "",
+        "table_id": "social_equality_equality_7_quiz",
         "section": "Social Science"
       },
       {
