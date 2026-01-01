@@ -121,7 +121,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Rulers and Buildings",
-        "table_id": "",
+        "table_id": "social_rulers_buildings_7_quiz",
         "section": "Social Science"
       },
       {
