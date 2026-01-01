@@ -111,7 +111,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "The Delhi Sultans",
-        "table_id": "",
+        "table_id": "social_delhi_sultans_7_quiz",
         "section": "Social Science"
       },
       {
