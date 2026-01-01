@@ -116,7 +116,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "The Mughal Empire",
-        "table_id": "",
+        "table_id": "social_mughal_empire_7_quiz",
         "section": "Social Science"
       },
       {
