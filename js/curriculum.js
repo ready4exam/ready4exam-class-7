@@ -90,11 +90,6 @@ export const curriculum = {
         "table_id": "science_forests_lifeline_7_quiz",
         "section": "Science"
       },
-      {
-        "chapter_title": "Waste Water Story",
-        "table_id": "",
-        "section": "Science"
-      }
     ]
   },
   "Social Science": {
