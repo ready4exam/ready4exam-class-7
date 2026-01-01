@@ -82,7 +82,7 @@ export const curriculum = {
       },
       {
         "chapter_title": "Water: A Precious Resource",
-        "table_id": "",
+        "table_id": "science_water_resource_7_quiz",
         "section": "Science"
       },
       {
