@@ -42,7 +42,7 @@ export const curriculum = {
     "Biology": [
       {
         "chapter_title": "Nutrition in Plants",
-        "table_id": "",
+        "table_id": "science_nutrition_plants_7_quiz",
         "section": "Science"
       },
       {
